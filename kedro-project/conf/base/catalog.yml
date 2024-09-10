@@ -1,0 +1,7 @@
+games:
+  type: pandas.CSVDataset
+  filepath: data\01_raw\game_data_all.csv
+  load_args:
+    sep: ","
+  save_args:
+    index: false
