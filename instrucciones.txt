@@ -1,4 +1,4 @@
 1. Activar el ambiente virtual: venv\Scripts\activate
 2. Instalar todas las dependencias necesarias: pip install -r requirements.txt
-3. Iniciar JupyterLab para editar los notebooks: jupyter lab
+3. Abrir el notebook del "Informe Técnico - MetaGames" ubicado: kedro-project\notebooks
 4. Desactivar el ambiente virtual: deactivate

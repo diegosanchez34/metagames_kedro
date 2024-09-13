@@ -5,3 +5,7 @@ games:
 numeric_games:
   type: pandas.ParquetDataset
   filepath: data\02_intermediate\numeric_game_data.pq
+
+games_new:
+  type: pandas.CSVDataset
+  filepath: data/02_intermediate/games_new.csv

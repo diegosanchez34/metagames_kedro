@@ -1,0 +1,10 @@
+columnas_a_eliminar:
+  - link
+  - store_genres
+  - detected_technologies
+  - store_asset_mod_time
+  - review_percentage
+  - 24_hour_peak
+  - all_time_peak_date
+  - total_reviews
+  - all_time_peak
