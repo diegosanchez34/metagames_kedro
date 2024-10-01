@@ -2,80 +2,83 @@
 
 ## Overview
 
-Este es un proyecto de Kedro diseñado para gestionar un caso de aprendizaje automático relacionado con la plataforma **MetaGames**. El objetivo principal es automatizar el proceso de preparación de la información y el entrenamiento de modelos para mejorar las recomendaciones de videojuegos para los usuarios.
+This is a Kedro project designed to handle a machine learning case related to the **MetaGames** platform. The main goal is to automate the process of preparing data and training models to improve video game recommendations for users.
 
-## Estructura del Proyecto
+## Project Structure
 
-El proyecto incluye:
+The project includes:
 
-- **Notebooks de Jupyter:** Documentos que contienen análisis, visualizaciones y explicaciones detalladas de cada fase del proceso.
-- **Automatización del Proceso:** Configuración de pipelines para el manejo de datos y entrenamiento de modelos.
-- **Documentación:** Archivos README y otras instrucciones para facilitar la comprensión y uso del proyecto.
+- **Jupyter Notebooks:** Documents containing detailed analysis, visualizations, and explanations of each phase of the process.
+- **Process Automation:** Setting up pipelines for data handling and model training.
+- **Documentation:** README files and other instructions to facilitate understanding and using the project.
 
-## Instrucciones para la Configuración
+## Setup Instructions
 
-Para ejecutar este proyecto, siga estos pasos:
+To run this project, follow these steps:
 
-1. **Activar el ambiente virtual:**
-   ```bash
-   venv\Scripts\activate
-   ```
+1. **Activate the virtual environment:**
 
-2. **Instalar todas las dependencias necesarias:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+venv\Scripts\activate
+```
 
-3. **Abrir el notebook del "Informe Técnico - MetaGames":**
-   Navegue a `kedro-project/notebooks` para acceder al informe técnico.
+2. **Install all necessary dependencies:**
 
-4. **Desactivar el ambiente virtual cuando haya terminado:**
-   ```bash
-   deactivate
-   ```
+```bash
+pip install -r requirements.txt
+```
 
-## Cómo Ejecutar el Pipeline de Kedro
+3. **Open the "Technical Report - MetaGames" notebook:**
+   Navigate to `kedro-project/notebooks` to access the technical report.
 
-Para ejecutar su proyecto de Kedro, utilice el siguiente comando:
+4. **Deactivate the virtual environment when you are done:**
+
+```bash
+deactivate
+```
+
+## How to Run the Kedro Pipeline
+
+To run your Kedro project, use the following command:
 
 ```bash
 kedro run
 ```
 
-Esto ejecutará todas las etapas definidas en el pipeline.
+This will run all the stages defined in the pipeline.
 
-## Cómo Probar Su Proyecto Kedro
+## How to Test Your Kedro Project
 
-Revise los archivos `src/tests/test_run.py` y `src/tests/pipelines/data_science/test_pipeline.py` para instrucciones sobre cómo escribir y ejecutar pruebas. Para ejecutar las pruebas, utilice:
+Review the files `src/tests/test_run.py` and `src/tests/pipelines/data_science/test_pipeline.py` for instructions on how to write and run tests. To run the tests, use:
 
 ```bash
 pytest
 ```
 
-## Documentación y Recursos
+## Documentation and Resources
 
-Para obtener más información sobre cómo utilizar Kedro y trabajar con notebooks, consulte la [documentación oficial de Kedro](https://docs.kedro.org). 
+For more information on how to use Kedro and work with notebooks, see the [official Kedro documentation](https://docs.kedro.org).
 
-### Notebooks y Kedro
+### Notebooks and Kedro
 
-Para trabajar con notebooks en su proyecto Kedro, asegúrese de que Jupyter esté instalado:
+To work with notebooks in your Kedro project, make sure Jupyter is installed:
 
 ```bash
 pip install jupyter
 ```
 
-Después de la instalación, puede iniciar un servidor local de Jupyter:
+After installation, you can start a local Jupyter server:
 
 ```bash
 kedro jupyter notebook
 ```
 
-### Ignorar Salidas de Notebooks en Git
+### Ignoring Notebook Outputs in Git
 
-Para eliminar automáticamente el contenido de las celdas de salida antes de realizar commits en Git, puede usar herramientas como [`nbstripout`](https://github.com/kynan/nbstripout). Por ejemplo, agregue un hook en `.git/config` con:
+To automatically remove the contents of output cells before committing to Git, you can use tools like [`nbstripout`](https://github.com/kynan/nbstripout). For example, add a hook in `.git/config` with:
 
 ```bash
 nbstripout --install
 ```
 
-Esto se ejecutará antes de cualquier commit.
+This will be run before any commit.
