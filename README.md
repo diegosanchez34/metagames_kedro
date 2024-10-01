@@ -79,11 +79,3 @@ nbstripout --install
 ```
 
 Esto se ejecutará antes de cualquier commit.
-
-## Contribuciones
-
-Si desea contribuir a este proyecto, por favor haga un fork del repositorio y envíe un pull request con sus cambios. Asegúrese de seguir las directrices de codificación y de documentación.
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulte el archivo `LICENSE` para más detalles.
