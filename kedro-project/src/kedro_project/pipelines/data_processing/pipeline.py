@@ -19,7 +19,7 @@ def create_pipeline(**kwargs) -> Pipeline:
         node(
             func=eliminar_columnas,
             inputs=["games", "params:columnas_a_eliminar"],
-            outputs="games_new",
+            outputs="games_filtered",
             name="eliminar_columnas_node",
         )
     ])

@@ -2,10 +2,14 @@ games:
   type: pandas.CSVDataset
   filepath: data\01_raw\game_data_all.csv
 
+games_new:
+  type: pandas.CSVDataset
+  filepath: data\01_raw\games_new.csv
+
 numeric_games:
   type: pandas.ParquetDataset
   filepath: data\02_intermediate\numeric_game_data.pq
 
-games_new:
-  type: pandas.CSVDataset
-  filepath: data/02_intermediate/games_new.csv
+games_filtered:
+  type: pandas.ParquetDataset
+  filepath: data\02_intermediate\games_filtered.pq

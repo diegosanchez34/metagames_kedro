@@ -16,36 +16,61 @@ The project includes:
 
 To run this project, follow these steps:
 
-1. **Activate the virtual environment:**
+1. **Create and activate the virtual environment:**
 
-```bash
-venv\Scripts\activate
-```
+   If you haven't created a virtual environment yet, you can do so by running the following command in your terminal (make sure you're in the project root directory):
+
+   ```bash
+   python -m venv venv
+   ```
+
+   Then, activate the virtual environment:
+
+   On Windows:
+
+   ```bash
+   venv\Scripts\activate
+   ```
+
+   On macOS/Linux:
+
+   ```bash
+   source venv/bin/activate
+   ```
 
 2. **Install all necessary dependencies:**
 
-```bash
-pip install -r requirements.txt
-```
+   With the virtual environment activated, install the dependencies listed in the `requirements.txt` file:
 
-3. **Open the "Technical Report - MetaGames" notebook:**
-   Navigate to `kedro-project/notebooks` to access the technical report.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-4. **Deactivate the virtual environment when you are done:**
+3. **Navigate to the project folder:**
 
-```bash
-deactivate
-```
+   Before running the Kedro pipeline, make sure you're inside the `kedro-project` folder. Change to the project directory:
 
-## How to Run the Kedro Pipeline
+   ```bash
+   cd kedro-project
+   ```
 
-To run your Kedro project, use the following command:
+4. **Run the Kedro pipeline:**
 
-```bash
-kedro run
-```
+   Now that you are in the `kedro-project` folder, execute the Kedro pipeline with the following command:
 
-This will run all the stages defined in the pipeline.
+   ```bash
+   kedro run
+   ```
+
+   This will run all the stages defined in the pipeline.
+
+5. **Deactivate the virtual environment when you are done:**
+
+   Once you're done working on the project, deactivate the virtual environment:
+
+   ```bash
+   deactivate
+   ```
 
 ## How to Test Your Kedro Project
 
